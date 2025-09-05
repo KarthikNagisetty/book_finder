@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://KarthikNagisetty.github.io/book_finder",
+  "homepage": "https://github.com/KarthikNagisetty/book_finder",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
