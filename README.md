@@ -1,12 +1,54 @@
-# React + Vite
+# Book Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Book Finder** web application built with **React** and **Vite**, using the **Open Library API** to search for books. This project is fully responsive and works on both desktop and mobile devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+[Book Finder on GitHub Pages](https://karthiknagisetty.github.io/book_finder/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Features
+
+- Search for books by title or author.
+- Display book results with:
+  - Cover image
+  - Title
+  - Author
+- Responsive design for mobile and desktop.
+- Built using React and Vite for fast performance.
+- Easy to deploy on GitHub Pages.
+
+---
+
+## 🛠️ Technologies Used
+
+- **React** (JSX + Components)  
+- **Vite** (Development server & build tool)  
+- **CSS Grid & Flexbox** (Responsive layout)  
+- **Open Library API** (Book data)  
+- **GitHub Pages** (Hosting)
+
+---
+##📝 Project Structure
+
+book_finder/
+├── index.html          # Main HTML file
+├── src/
+│   ├── main.jsx        # Entry point
+│   ├── App.jsx         # Main App component
+│   ├── components/
+│   │   └── SearchBar.jsx
+│   └── app.css         # Global styles
+├── package.json
+└── README.md
+
+
+##📚 Usage
+
+1.Open the application in your browser.
+2.Enter a book title or author in the search bar.
+3.Click Search.
+4.Browse the results with book covers, titles, and authors
