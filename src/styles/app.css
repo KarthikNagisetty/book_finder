@@ -11,12 +11,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  box-sizing: border-box;
 }
 
 .app {
   width: 100%;
   max-width: 1200px;
   padding: 1.5rem;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /* === Header === */
@@ -119,6 +127,24 @@ body {
 .search-bar button:hover {
   background: #f3a847;  /* Darker Amazon yellow */
 }
+searchbar {
+  display: flex;
+  flex-direction: column; /* stack input and button on mobile */
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.searchbar button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
 
 /* === Status Messages === */
@@ -140,6 +166,11 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
  
 
@@ -164,6 +195,11 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   border-color: #007bff;
  
+}
+.results img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* === Book Cover === */
@@ -242,5 +278,14 @@ body {
 
   .search-bar input {
     width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .searchbar {
+    flex-direction: row; /* input and button side by side on larger screens */
+  }
+
+  .searchbar input {
+    flex: 1;
   }
 }
